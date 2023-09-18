@@ -9,4 +9,5 @@ Ainun Nadhifah Syamsiyah (5025221053)
 Membuat kalkulator HTML + JS sederhana yang menerapkan `getElementById()`
 
 ## Demo
-![image](https://github.com/ainunns/pweb-tugas-2/assets/58164571/2d6eb670-b5ce-418e-bb82-63bc57318f43)
+![image](https://github.com/ainunns/pweb-tugas-3/assets/58164571/99bdae24-de2e-4e22-8bac-45bd30e176aa)
+
