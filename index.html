@@ -13,10 +13,10 @@
       <br />
       <label>Operator: </label>
       <select id="operator">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
+        <option value="+">tambah (+)</option>
+        <option value="-">kurang (-)</option>
+        <option value="*">kali (*)</option>
+        <option value="/">bagi (/)</option>
       </select>
       <br />
       <label>Second Number: </label>
@@ -27,8 +27,10 @@
     <p>Hasil perhitungan= <span id="result">0</span></p>
     <script>
       function calculate() {
-        let firstNumber = Number(document.getElementById("firstNumber").value);
-        let secondNumber = Number(
+        let firstNumber = parseFloat(
+          document.getElementById("firstNumber").value
+        );
+        let secondNumber = parseFloat(
           document.getElementById("secondNumber").value
         );
         let operator = document.getElementById("operator").value;
@@ -43,7 +45,7 @@
         } else if (operator == "*") {
           calc = firstNumber * secondNumber;
         } else if (operator == "/") {
-          if (secondNumber == "0") {
+          if (secondNumber == 0) {
             calc = "Error";
           } else {
             calc = firstNumber / secondNumber;
