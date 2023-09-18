@@ -24,37 +24,7 @@
       <br />
       <input type="submit" value="hitung" onclick="calculate()" />
     </form>
-    <p>Hasil perhitungan= <span id="result">0</span></p>
-    <script>
-      function calculate() {
-        let firstNumber = parseFloat(
-          document.getElementById("firstNumber").value
-        );
-        let secondNumber = parseFloat(
-          document.getElementById("secondNumber").value
-        );
-        let operator = document.getElementById("operator").value;
-        let result = document.getElementById("result");
-
-        let calc = 0;
-
-        if (operator == "+") {
-          calc = firstNumber + secondNumber;
-        } else if (operator == "-") {
-          calc = firstNumber - secondNumber;
-        } else if (operator == "*") {
-          calc = firstNumber * secondNumber;
-        } else if (operator == "/") {
-          if (secondNumber == 0) {
-            calc = "Error";
-          } else {
-            calc = firstNumber / secondNumber;
-          }
-        }
-
-        result.innerHTML = calc;
-        event.preventDefault();
-      }
-    </script>
+    <p>Hasil perhitungan = <span id="result">0</span></p>
+    <script src="script.js"></script>
   </body>
 </html>
